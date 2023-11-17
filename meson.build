@@ -92,7 +92,7 @@ common_arguments = [
 ]
 
 c_arguments = []
-cpp_arguments = []
+cpp_arguments = ['-latomic']
 
 if cc.get_id() == 'clang'
     if cc.version().version_compare('<9')
